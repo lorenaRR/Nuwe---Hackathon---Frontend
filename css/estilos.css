@@ -1,0 +1,197 @@
+body, html{
+    color:black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.left{
+    background-image: url("../img/Background.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 40%;
+    color: white;
+    height: 100vh;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    
+}
+
+.layer{
+    background-color: rgba(85, 107, 47, 0.7);
+    padding: 2em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    text-align:center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.layer p{
+    width: 300px;
+    height: 150px;
+    font-size: 1.25em;
+    border-bottom: 2px solid white;
+    padding: 1.5em;;
+}
+
+.right{
+    width: 60%;
+    height: 100vh;
+    text-align:center;
+    padding: 2em;
+    margin: auto;
+}
+
+
+.up{
+    padding-bottom: 3em;
+    height: 20px;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.session{
+    float:right;
+}
+
+.volver{
+    float: left;
+}
+
+.pasos{
+    float: right;
+}
+
+.up a{
+    color: darkolivegreen;
+}
+
+.down{
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.index{
+    width: 400px;
+    height: 100px;
+}
+
+.dev, .business{
+    width: 450px;
+    height: 100px;
+    border: 1px solid darkolivegreen;
+    padding: 1.5em;
+    margin: 1em;
+}
+
+.dev a, .business a{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.index > p {
+    padding-bottom: 3em;
+}
+
+.dev:hover,.business:hover{
+    background-color: #eee;
+}
+
+.text p{
+text-align: left;
+padding-left: 1em;
+}
+
+.icon{
+    background-color: darkolivegreen;
+    border-radius: 50%;
+    padding: 1.5em;
+    margin: 1em;;
+    float: left;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+form{
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 2em;
+    justify-content: space-around;
+}
+
+label{
+    color:gray;
+}
+
+input[type=text], input[type=tel], input[type=password], input[type=number],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type=checkbox]:checked{
+    background-color: darkolivegreen;
+  }
+  
+  input[type=submit] {
+    width: 100%;
+    background-color: darkolivegreen;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+  @media only screen  and (max-width: 640px)
+ {
+    .container .left{
+        display: none;
+    }
+    .dev,.business{
+        width: 85%;
+        height: 75%;
+        padding-bottom: 3em;
+    }
+
+    .right{
+        margin:auto;
+        padding:0px;
+    }
+
+}
